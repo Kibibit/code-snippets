@@ -19,7 +19,6 @@ function kbCodeSnippet(selector) {
     // hightlight code (auto detect if needed)
     hljs.highlightBlock(block);
 
-    debugger;
     if (lineNumbers) {
       hljs.lineNumbersBlock(block);
     }
