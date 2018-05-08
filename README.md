@@ -6,7 +6,7 @@ This library depends on `jQuery` at the moment. I'll create an independent versi
 ## how to use
 
 include the following files in your html file:
-```
+```html
 <!-- IN HEADER -->
 <link rel="stylesheet" href="/kb-code-snippets.css">
 
