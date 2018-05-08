@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic");
+
+.kb-code {
+  width: 100%;
+  margin: 10px;
+  font-size: 1em;
+  line-height: 1.2em;
+  min-height: 40px;
+  background-color: #0f3642;
+  color: #b4c4c6;
+  padding: 10px;
+  border-radius: 7px;
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 30px 1px rgba(0, 0, 0, 0.2);
+}
+
+.kb-code,
+.kb-code *,
+.kb-code *::before,
+.kb-code *::after {
+  box-sizing: border-box;
+}
+
+.kb-code pre {
+  margin: 0;
+}
+.kb-code .hljs {
+  background: inherit;
+  padding: 0;
+  overflow-x: initial;
+}
+.kb-code.terminal {
+  border-radius: 0 0 7px 7px;
+  margin-top: 35px;
+}
+.kb-code.terminal::before {
+  border-radius: 7px 7px 0 0;
+  position: absolute;
+  content: attr(data-title);
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  padding: 0 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #4c3436;
+  font-size: 1em;
+  background: linear-gradient(0deg, #d8d8d8, #ececec);
+  top: -25px;
+  left: 0;
+  font-family: "PT Sans", sans-serif;
+}
+.kb-code.terminal::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  background: #f95c5b;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px #da3d42, 22px 0 0 0 #fabe3b, 22px 0 0 1px #ecb03e, 44px 0 0 0 #38cd46, 44px 0 0 1px #2eae32;
+}
+
+.kb-code .hljs-ln td.hljs-ln-numbers {
+  color: grey;
+  padding-right: 0.5em;
+}
+
+.kb-code :not(pre) code {
+  color: #b9b5b8;
+  background-color: #0f3642;
+  padding: 5px;
+  border-radius: 3.5px;
+  display: inline-block;
+}
