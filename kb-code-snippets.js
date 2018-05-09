@@ -26,5 +26,5 @@ function kbCodeSnippet(selector, scrollbarTheme) {
 }
 
 function kbWrapper(lang) {
-  return `<pre><code class="hljs ${lang || ''}"></code></pre>`;
+  return `<div class="kb-scroller"><pre><code class="hljs ${lang || ''}"></code></pre></div>`;
 }
