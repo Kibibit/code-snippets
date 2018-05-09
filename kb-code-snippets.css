@@ -21,6 +21,8 @@
 
 .kb-code,
 .kb-code *,
+.kb-code::before,
+.kb-code::after
 .kb-code *::before,
 .kb-code *::after {
   box-sizing: border-box;
