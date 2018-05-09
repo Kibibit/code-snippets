@@ -2,7 +2,7 @@ $(document).ready(function () {
   kbCodeSnippet();
 });
 
-function kbCodeSnippet(selector) {
+function kbCodeSnippet(selector, scrollbarTheme) {
   $(selector || '.kb-code').each(function (i, block) {
     const codeElement = $(block);
     const lang = (codeElement.attr('data-lang') || '').toLowerCase();
@@ -21,6 +21,12 @@ function kbCodeSnippet(selector) {
 
     if (lineNumbers) {
       hljs.lineNumbersBlock(block);
+    }
+    
+    if (codeElement.mCustomScrollbar) {
+      codeElement.mCustomScrollbar({
+        theme: scrollbarTheme || "light-thick"
+      });
     }
   });
 }
