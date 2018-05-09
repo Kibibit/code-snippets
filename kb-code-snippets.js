@@ -25,7 +25,8 @@ function kbCodeSnippet(selector, scrollbarTheme) {
     
     if (codeElement.mCustomScrollbar) {
       codeElement.mCustomScrollbar({
-        theme: scrollbarTheme || "light-thick"
+        theme: scrollbarTheme || "light-thick",
+        axis: "yx"
       });
     }
   });
