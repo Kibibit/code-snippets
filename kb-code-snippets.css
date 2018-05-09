@@ -13,7 +13,7 @@
   border-radius: 7px;
   position: relative;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 30px 1px rgba(0, 0, 0, 0.2);
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .kb-code,
