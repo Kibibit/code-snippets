@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic");
 
 .kb-code {
+  display: flex;
+  align-items: center;
   width: 100%;
   margin: 10px;
   font-size: 1em;
