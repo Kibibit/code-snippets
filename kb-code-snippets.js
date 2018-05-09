@@ -22,13 +22,6 @@ function kbCodeSnippet(selector, scrollbarTheme) {
     if (lineNumbers) {
       hljs.lineNumbersBlock(block);
     }
-    
-    if (codeElement.mCustomScrollbar) {
-      codeElement.mCustomScrollbar({
-        theme: scrollbarTheme || "light-thick",
-        axis: "yx"
-      });
-    }
   });
 }
 
