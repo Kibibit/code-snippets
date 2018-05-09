@@ -87,16 +87,39 @@ done!
     const hello = "world";
     console.log(hello);
   </div>
+  
+  <h1 class="kb-title">How to use</h1>
+  <div>import the following files to your html file:</div>
+  <div class="kb-code"
+       data-title="dependencies"
+       data-lang="html">
+&lt;!-- in the head section --&gt;
+&lt;link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/hopscotch.min.css'&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.rawgit.com/Kibibit/code-snippets/d6fa009d/kb-code-snippets.css&quot;&gt;
+
+&lt;!-- at the end of the body section --&gt;
+&lt;script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'&gt;&lt;/script&gt;
+&lt;script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'&gt;&lt;/script&gt;
+&lt;script src='//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js'&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdn.rawgit.com/Kibibit/code-snippets/d6fa009d/kb-code-snippets.js&quot;&gt;&lt;/script&gt;
+  </div>
+  
+  <div>then, simply inject a div with the following attributes:</div>
+  <div class="kb-code"
+       data-title="dependencies"
+       data-lang="html">
+    &lt;div class=&quot;kb-code &lt;optional: terminal&gt;&quot;
+       data-title=&quot;&lt;snippet_title&gt;&quot;
+       data-lang=&quot;&lt;code_language&gt;&quot;&gt;
+  &lt;!-- insert code here --&gt;
+&lt;/div&gt;
+  </div>
+  
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js'></script>
 
-
-
   <script src="//cdn.rawgit.com/Kibibit/code-snippets/d6fa009d/kb-code-snippets.js"></script>
-
-
-
 
 </body>
 
