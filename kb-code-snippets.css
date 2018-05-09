@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic");
 
+:not(pre) code {
+    background-color: #0f3642;
+    color: #b4c4c6;
+    padding: 0.2em;
+    margin: 0.1em 0;
+    display: inline-block;
+    border-radius: 0.2em;
+}
+
 .kb-code {
   display: flex;
   align-items: center;
