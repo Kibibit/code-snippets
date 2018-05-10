@@ -54,7 +54,6 @@
 }
 .kb-code .hljs {
   background: inherit;
-  padding: 0;
   overflow-x: initial;
 }
 .kb-code.terminal {
