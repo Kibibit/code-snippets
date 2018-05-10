@@ -8,7 +8,7 @@ function kbCodeSnippet(selector, scrollbarTheme) {
     const lang = (codeElement.attr('data-lang') || '').toLowerCase();
     const lineNumbers = !!codeElement.attr('data-lines');
     codeElement
-      .text($.trim(codeElement.text())) // trim to avoid spaces
+      .html($.trim(codeElement.html())) // trim to avoid spaces
       .wrapInner(kbWrapper(lang)); // wrap in code block
 
     // wish this could be done using highlight.js -__- language detection
