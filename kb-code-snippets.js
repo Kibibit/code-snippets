@@ -16,7 +16,7 @@ function kbCodeSnippet(selector, scrollbarTheme) {
       codeElement.addClass('terminal');
     }
     
-    const innerCode = codeElement.find('.hljs');
+    const innerCode = codeElement.find('code')[0];
 
     // hightlight code (auto detect if needed)
     hljs.highlightBlock(innerCode);
@@ -28,5 +28,5 @@ function kbCodeSnippet(selector, scrollbarTheme) {
 }
 
 function kbWrapper(lang) {
-  return `<div class="kb-scroller"><pre><code class="hljs ${lang || ''}"></code></pre></div>`;
+  return `<div class="kb-scroller"><pre><code class="${lang || ''}"></code></pre></div>`;
 }
