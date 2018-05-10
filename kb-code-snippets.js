@@ -15,12 +15,14 @@ function kbCodeSnippet(selector, scrollbarTheme) {
     if (lang === 'shell') {
       codeElement.addClass('terminal');
     }
+    
+    const innerCode = codeElement.find('.hljs');
 
     // hightlight code (auto detect if needed)
-    hljs.highlightBlock(block);
+    hljs.highlightBlock(innerCode);
 
     if (lineNumbers) {
-      hljs.lineNumbersBlock(block);
+      hljs.lineNumbersBlock(innerCode);
     }
   });
 }
